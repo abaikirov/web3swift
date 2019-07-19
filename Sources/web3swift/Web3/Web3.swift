@@ -75,5 +75,10 @@ public struct Web3 {
         let infura = InfuraProvider(Networks.Ropsten, accessToken: accessToken)!
         return web3(provider: infura)
     }
+  
+  public static func InfuraKovanWeb3(accessToken: String? = nil) -> web3 {
+    let infura = InfuraProvider(Networks.Kovan, accessToken: accessToken)!
+    return web3(provider: infura)
+  }
     
 }
